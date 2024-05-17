@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="template/css/sb-admin-2.css">
 
-    <title>SB Admin 2 - Blank</title>
+    <title>@yield('title')</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

@@ -23,7 +23,7 @@
                 @csrf
                 <div class="mb-3">
                     <label class="form-label">Merk</label>
-                    <input type="text" readonly value="{{$bar->merk}}" class="form-control" name="merk">
+                    <input type="text"  value="{{$bar->merk}}" class="form-control" name="merk">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Nama Barang</label>

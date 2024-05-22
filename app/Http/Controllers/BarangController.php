@@ -12,7 +12,9 @@ class BarangController extends Controller
      */
     public function index()
     {
-        //
+        $nomor =1;
+        $bar = Barang::all();
+        return view('barang.index',compact('nomor','bar'));
     }
 
     /**
@@ -20,7 +22,7 @@ class BarangController extends Controller
      */
     public function create()
     {
-        //
+        return view('barang.form');
     }
 
     /**
@@ -28,7 +30,12 @@ class BarangController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $bar = new Barang();
+        $bar->merk = $request->merk; 
+        $bar->nama =$request->nama;
+        $bar->save();
+
+        return redirect('/barang/');
     }
 
     /**

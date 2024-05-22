@@ -1,6 +1,7 @@
 
 @extends('layouts.master')
-@yield('content')
+@section('title','Halaman Dashboard')
+@section('heading','Halaman Dashboard')
 @section('content')
     <div class="card">
         <ol class="breadcrumb float-sm-right">
@@ -12,11 +13,11 @@
         <div class="container-fluid">
 
             <!-- Page Heading -->
-            <h1 class="h3 mb-2 text-gray-800">Tabel Penjadwalan</h1>
+            <h1 class="h3 mb-2 text-gray-800">Tabel Barang</h1>
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Tabel Penjadwalan</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Tabel Barang</h6>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -26,8 +27,7 @@
                                     <th>No</th>
                                     <th> Merk</th>
                                     <th>Nama Barang</th>
-
-                                    
+                        
                                 </tr>
                             </thead>
                             <tbody>
@@ -38,7 +38,7 @@
                                     <td>{{ $item->merk }}</td>
                                     
                                     <td>
-                                        <a href="/penjadwalan/edit/{{$item->id}}" class="btn btn-info btn-xs"><i class="fa fa-pencil-alt"></i></a>
+                                        <a href="/barang/edit/{{$item->id}}" class="btn btn-info btn-xs"><i class="fa fa-pencil-alt"></i></a>
 
                                 <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#hapus{{$item->kode}}">
                                     <i class="fa fa-trash"></i>
@@ -57,7 +57,7 @@
                                         </div>
                                         <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                                        <form action="/penjadwalan/{{$item->id}}" method="POST">
+                                        <form action="/barang/{{$item->id}}" method="POST">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-primary">Hapus</button>

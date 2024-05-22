@@ -25,4 +25,6 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/barang/', [BarangController::class, 'index']);
+Route::get('/barang/form/', [BarangController::class, 'create']);
+Route::get('/barang/form/', [BarangController::class, 'store']);
 

@@ -31,8 +31,11 @@ class BarangController extends Controller
     public function store(Request $request)
     {
         $bar = new Barang();
+        $bar->kode = $request->kode; 
         $bar->merk = $request->merk; 
-        $bar->nama =$request->nama;
+        $bar->nama = $request->nama;
+        $bar->harga = $request->harga;
+        $bar->qty =$request->qty;
         $bar->save();
 
         return redirect('/barang/');
@@ -63,8 +66,11 @@ class BarangController extends Controller
     {
         $bar =Barang::find($id);
 
+        $bar->kode = $request->kode; 
         $bar->merk = $request->merk; 
         $bar->nama =$request->nama;
+        $bar->harga =$request->harga;
+        $bar->qty =$request->qty;
         $bar->save();
 
         return redirect('/barang/');   

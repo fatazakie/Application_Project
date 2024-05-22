@@ -22,12 +22,24 @@
                 @method('PUT')
                 @csrf
                 <div class="mb-3">
+                    <label class="form-label">Kode</label>
+                    <input type="text" readonly value="{{$bar->kode}}" class="form-control" name="kode">
+                </div>
+                <div class="mb-3">
                     <label class="form-label">Merk</label>
                     <input type="text"  value="{{$bar->merk}}" class="form-control" name="merk">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Nama Barang</label>
                     <input type="text" value="{{$bar->nama}}" class="form-control" name="nama">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nama Barang</label>
+                    <input type="text" value="{{$bar->harga}}" class="form-control" name="harga">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Harga Barang</label>
+                    <input type="number" value="{{$bar->qty}}" class="form-control" name="qty">
                 </div>
                 
                 <button type="submit" class="btn btn-primary">Edit Data</button>

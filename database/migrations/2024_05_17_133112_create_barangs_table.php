@@ -14,8 +14,11 @@ return new class extends Migration
         Schema::create('barangs', function (Blueprint $table) {
             
             $table->id();
-            $table->string('merk')->unique();
+            $table->string('kode')->unique();
+            $table->string('merk');
             $table->string('nama');
+            $table->string('harga');
+            $table->string('qty');
             $table->timestamps();
         });
     }

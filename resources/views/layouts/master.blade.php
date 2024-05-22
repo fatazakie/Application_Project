@@ -19,6 +19,9 @@
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
+         <!-- Favicon -->
+    <link href="{{ asset('img/favicon.png') }}" rel="icon" type="image/png">
+
     <!-- Custom styles for this template-->
     <link href="{{ asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
     @yield('css')
@@ -37,7 +40,8 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">ZAKIE ELEKTRIK </div>
+                
+                <div class="sidebar-brand-text mx-4">ZAKIE ELEKTR<i class="fa-regular fa-lightbulb"></i>K </div>
             </a>
 
             <!-- Divider -->
@@ -68,10 +72,9 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fa-solid fa-clipboard"></i>
-                    <span>Penilaian</span>
+                <a class="nav-link collapsed" href="#" >
+                    <i class="fa-solid fa-address-card"></i>
+                    <span>contact</span>
                 </a>
             </li>
 
@@ -260,7 +263,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -314,7 +317,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Dara Shalsabila Furda &copy; 2024</span>
+                        <span>M. Fata Zhakie &copy; 2024</span>
                     </div>
                 </div>
             </footer>

@@ -53,7 +53,7 @@
                                         <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                        Yakin ingin menghapus data penjadwalan <b>{{$item->kelas}}</b>?
+                                        Yakin ingin menghapus data <b>{{$item->nama}}</b>?
                                         </div>
                                         <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>

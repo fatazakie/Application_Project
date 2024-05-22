@@ -28,5 +28,5 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 
 Route::get('barang', [BarangController::class, 'index']);
 Route::get('/barang/form/', [BarangController::class, 'create']);
-Route::get('/barang/form/', [BarangController::class, 'store']);
+Route::post('/barang/form/', [BarangController::class, 'store']);
 

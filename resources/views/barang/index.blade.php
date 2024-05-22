@@ -8,7 +8,7 @@
             <li class="breadcrumb-item"><a href="#">Home</a></li>
           </ol>
         <div class="card-header">
-            <a href="/penjadwalan/form/" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah Data</a>
+            <a href="/barang/form/" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah Data</a>
         </div>
         <div class="container-fluid">
 
@@ -25,7 +25,7 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th> Merk</th>
+                                    <th>Merk Barang</th>
                                     <th>Nama Barang</th>
                         
                                 </tr>

@@ -63,7 +63,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/barang/" data-toggle="collapse" data-target="#collapseTwo"
+                <a class="nav-link collapsed" href="/barang/" data-toggle="collapse" data-target="/barang/"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fa-solid fa-boxes-packing"></i>
                     <span>Barang</span>
